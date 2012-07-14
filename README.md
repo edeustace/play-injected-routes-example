@@ -15,3 +15,11 @@ The other downside of this approach is that its configured in the app, so
 a plugin/module can't contribute routes without a little bit of fiddling with
 the main app.
 
+# running
+    git clone git@github.com:edeustace/play-injected-routes-example.git
+    cd play-injected-routes-example
+    play run
+    curl http://localhost:9000/injectedRoute //returns a string
+    curl http://localhost:9000/injectedRouteWithParam/2 //return 'the number is:
+    2'
+
